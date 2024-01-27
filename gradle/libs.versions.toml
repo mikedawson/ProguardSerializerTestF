@@ -1,0 +1,49 @@
+[versions]
+compose = "1.5.4"
+compose-compiler = "1.5.8"
+compose-plugin = "1.5.11"
+junit = "4.13.2"
+kotlin = "1.9.21"
+kotlinx-serialization-json = "1.6.2"
+mockwebserver = "4.12.0"
+ktor = "2.3.7"
+okhttp = "4.12.0"
+log4j = "2.7.0"
+logback = "1.4.13"
+jakarta-mail = "2.1.2"
+jakarta-servlet = "6.0.0"
+janino = "3.1.11"
+
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization-json"}
+mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mockwebserver" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor"}
+ktor-client-json = { group = "io.ktor", name = "ktor-client-json", version.ref = "ktor"}
+ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor"}
+ktor-client-content-negotiation = { group = "io.ktor", name="ktor-client-content-negotiation", version.ref = "ktor"}
+log4j-api = { group = "org.apache.logging.log4j", name = "log4j-api", version.ref = "log4j" }
+log4j-core = { group = "org.apache.logging.log4j", name = "log4j-core", version.ref = "log4j" }
+log4j-slf4j-impl = { group = "org.apache.logging.log4j", name = "log4j-slf4j-impl", version.ref = "log4j" }
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+janino = { group = "org.codehaus.janino", name = "janino", version.ref = "janino" }
+
+# shouldn't be needed
+jakarta-mail = { group = "jakarta.mail", name = "jakarta.mail-api", version.ref = "jakarta-mail" }
+jakarta-servlet = { group = "jakarta.servlet", name = "jakarta.servlet-api", version.ref = "jakarta-servlet"}
+
+
+[plugins]
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
